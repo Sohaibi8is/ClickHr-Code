@@ -1,0 +1,36 @@
+DATABASE:
+
+create database and table and insert dummy data:
+
+
+Create database testdb;
+
+CREATE TABLE IF NOT EXISTS user(id int NOT NULL AUTO_INCREMENT primary key,  username varchar(255), password varchar(255));
+
+
+INSERT INTO user(username, password) VALUES ("mansoor" , "54321");
+
+SELECT * FROM user;
+
+
+
+PYTHON APIs:
+
+install anaconda
+
+create new enviroment by running cmd:
+
+- conda create -n environment_name python=3.6 
+ set environment_name of your choice
+
+once environment is created, activate it by running cmd:
+
+- conda activate environment_name
+
+install libraries:
+
+- pip install -r requirement.txt
+
+then run the code
+
+- python new_db_api.py

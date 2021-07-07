@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+   
+<!-- Mirrored from iqonic.design/themes/vito/html/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 12:18:20 GMT -->
+<head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Click HR | Sign In</title>
+      <!-- Favicon -->
+      <link rel="icon" href="#">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Typography CSS -->
+      <link rel="stylesheet" href="css/typography.css">
+      <!-- Style CSS -->
+      <script src="index.js"></script>
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="css/responsive.css">
+   </head>
+   <body onload="checkError()">
+      <!-- loader Start -->
+    
+      <!-- loader END -->
+        <!-- Sign in Start -->
+        <div><p id="unautorizeError" style="color:red;background-color: rgba(248, 248, 10, 0.637);"></p></div>
+        <section class="sign-in-page">
+            <div class="container bg-white mt-5 p-0">
+                <div class="row no-gutters">
+                    <div class="col-sm-6 align-self-center">
+                        <div class="sign-in-from">
+                            <h1 class="mb-0">Sign in</h1>
+                            <p>Enter your username and password to access admin panel.</p>
+                            <!-- action="http://162.214.195.234:8081/api/userLogin" -->
+                            <form action="javascript:void(0);" class="mt-4" method="POST" enctype="multipart/form-data" id="alf">
+                                <div class="form-group">
+                                    <label for="InputEmail1">Username</label>
+                                    <input name="signinUsername" id="signinUsername" type="text" class="form-control mb-0" placeholder="Enter Username/Email">
+                                    <div style="background-color: white;"><p style="color:red;font-size: medium;" id="signinUsernameValidate"></p></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <a href="pages-recoverpw.html" class="float-right">Forgot password?</a>
+                                    <input name="signinPassword" id="signinPassword" type="password" class="form-control mb-0" id="exampleInputPassword1" placeholder="Enter Password">
+                                    <div style="background-color: white;"><p style="color:red;font-size: medium;" id="signinPasswordValidate"></p></div>
+                                </div>
+                                <div class="d-inline-block w-100" style="padding:none;margin-bottom:5px;">
+                                    <div class="custom-control custom-checkbox d-inline-block mt-2 pt-1">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label id="signinRememberMe" class="custom-control-label" for="customCheck1">Remember Me</label>
+                                    </div>
+                                </div>
+                                <button  onclick="verifyUser()" class="btn btn-primary float-right" style="color: white !important;
+                                    background: linear-gradient(#04619F,#000000);
+                                    top: 0;
+                                    right: 0;
+                                    position: inherit;
+                                    width: -webkit-fill-available;
+                                    margin-bottom: 15px !important;" id="signinButton">Sign in</button>
+                                
+                                <div class="sign-info">
+                                    <span class="dark-color d-inline-block line-height-2">Don't have an account? <a href="sign-up.html">Sign up</a></span>
+                                    <!-- <ul class="iq-social-media">
+                                        <li><a href="#"><i class="ri-facebook-box-line"></i></a></li>
+                                        <li><a href="#"><i class="ri-twitter-line"></i></a></li>
+                                        <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                                    </ul> -->
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 text-center">
+                        <div class="sign-in-detail text-white" style="    background: linear-gradient(#04619F,#000000) !important;">
+                            <a class="sign-in-logo mb-5" href="#"><h1 style="color: white !important;"><strong>Click HR</strong> </h1></a>
+                            <div class="owl-carousel" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true" data-items="1" data-items-laptop="1" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1" data-margin="0">
+                                <div class="item">
+                                    <img src="images/login/1.png" class="img-fluid mb-4" alt="logo">
+                                    <h4 class="mb-1 text-white">Manage your orders</h4>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                                </div>
+                                <div class="item">
+                                    <img src="images/login/1.png" class="img-fluid mb-4" alt="logo">
+                                    <h4 class="mb-1 text-white">Manage your orders</h4>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                                </div>
+                                <div class="item">
+                                    <img src="images/login/1.png" class="img-fluid mb-4" alt="logo">
+                                    <h4 class="mb-1 text-white">Manage your orders</h4>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sign in END -->
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <!--<script src="index.js"></script>-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Appear JavaScript -->
+      <script src="js/jquery.appear.js"></script>
+      <!-- Countdown JavaScript -->
+      <script src="js/countdown.min.js"></script>
+      <!-- Counterup JavaScript -->
+      <script src="js/waypoints.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+      <!-- Wow JavaScript -->
+      <script src="js/wow.min.js"></script>
+      <!-- Apexcharts JavaScript -->
+      <script src="js/apexcharts.js"></script>
+      <!-- Slick JavaScript -->
+      <script src="js/slick.min.js"></script>
+      <!-- Select2 JavaScript -->
+      <script src="js/select2.min.js"></script>
+      <!-- Owl Carousel JavaScript -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- Magnific Popup JavaScript -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Smooth Scrollbar JavaScript -->
+      <script src="js/smooth-scrollbar.js"></script>
+      <!-- Chart Custom JavaScript -->
+      <!-- <script src="js/chart-custom.js"></script> -->
+      <!-- Custom JavaScript -->
+      <script src="js/custom.js"></script>
+   </body>
+
+<!-- Mirrored from iqonic.design/themes/vito/html/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 12:18:20 GMT -->
+</html>

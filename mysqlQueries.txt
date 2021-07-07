@@ -1,0 +1,30 @@
+use clickhr;
+create table CallRecord(
+ResumeData_id int primary key not null auto_increment,
+status varchar(20),
+joinDate varchar(30),
+agent varchar(50),
+phone_number varchar(20)
+)
+create table ResumeData(
+id int primary key not null auto_increment,
+name varchar(100),
+email varchar(100),
+phone_number varchar(20),
+designation varchar(1500),
+education varchar(1500),
+skills varchar(1500),
+experience varchar(1500),
+country varchar(100),
+screener_questions varchar(1500),
+total_experience varchar(100),
+resume_filePath varchar(1500),
+applied_date varchar(50),
+job_title varchar(1500),
+adddress varchar(1500)
+)
+create table usersData(
+username varchar(100),
+email varchar(100),
+password varchar(1500)
+)

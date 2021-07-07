@@ -1,0 +1,14 @@
+Flask==1.1.2
+mysql-connector-python==8.0.23
+flask-cors
+spacy==2.3.4
+nltk==3.5
+numpy==1.19.4
+pandas==1.1.4
+scipy==1.4.1
+textract==1.6.3
+find-job-titles==0.7.0
+tika==1.24
+pyresparser==1.0.6
+en-core-web-md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-2.3.1/en_core_web_md-2.3.1.tar.gz
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
